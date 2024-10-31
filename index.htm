@@ -1,0 +1,126 @@
+<!-- Laith Khader, Southern Illinois University, 8/31/24, 9/01/24 -->
+<html lang="en-US">
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <audio autoplay loop>
+  <source src="Arrow Root.mp3" type="audio/mpeg">
+  
+</audio>
+
+    <meta charset="utf-8">
+    <title>Laith's Bikes</title>
+    <meta name="description" content="Bike shop with various brands and models of bikes"> 
+    <meta name="keywords" content="BMX, BIKE, Cannondale, Trek, Bianchi, BMX, Road Bikes, Carbondale, KOGA">   
+
+    <!-- Link to SlickNav CSS for mobile responsive menu -->
+    <link rel="stylesheet" href="slicknav.css">
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="styles/BikeShop.css">
+
+    <!-- Link to jQuery and SlickNav JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+
+    <script>
+        $(function(){
+            $('#nav_menu').slicknav({
+                prependTo: '#mobile_menu'
+            });
+        });
+    </script>
+    <!-- jquery & SlickNav JS -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="SlickNav-master/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#mobile_menu').slicknav();
+        });
+    </script>
+   
+</head>
+
+<body>
+    <header>
+        <img src="images/bike.jpg" alt="MPC Logo" width="100%" style="max-width: 500px;"> 
+    </header> 
+
+
+    <h1>Laith's Bikes</h1>
+    
+    <!-- Mobile menu container -->
+    <nav id="mobile_menu"></nav>
+
+    <!-- Regular navigation menu -->
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm" class="current">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm" class="lastitem">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <nav id="mobile_menu">
+        <ul>
+            <li><a href="index.htm" class="current">Home</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm" class="lastitem">Contact</a></li>
+        </ul>
+    </nav>
+   
+    <style>
+    
+        #mobile_menu{
+                    display:none;
+        }
+    </style>
+    
+        <img src="images/bike3.jpg" class= "mainimage" alt="Main Graphic">
+
+    <h2>Bike shop focused on those who live in or are moving to a college town or a new big city.</h2>
+    
+    <!-- Two-column layout starts here -->
+    <div class="container">
+        <div class="column">
+            <p>Looking for a bike to send off you or your child to a new town? Whether it be a college town or a new big city. We have you covered come check us out now!</p>
+            <p>At Laith's Bike store we focus on ensuring comfortability, efficiency, and satisfaction. We have 3 different sorts of bike models including mountain bikes, BMX, and sport hybrid bikes.</p>
+        </div>
+        
+        <div class="column">
+            <blockquote>We specialize in 3 main models of bikes: Mountain Bikes, Sports Hybrid, BMX.</blockquote>
+            <ol>
+                <p>Brands we have to offer:</p>   
+                <li>Bianchi</li> 
+                <li>TREK</li> 
+                <li>Red Power Bikes</li>
+                <li>KOGA</li>
+                <li>Cannondale</li>
+            </ol>
+            <p>We have many bikes that are produced in America, but we also get stock in from overseas including Italy, Britain, and the Netherlands.</p> 
+        </div>
+    </div>
+    <!-- Two-column layout ends here -->
+
+    <footer>
+        <p>Save big at our <strong>start of school send off</strong>!</p>
+        <p>Get in contact with the owner &amp; staff today!</p>
+        <address>CALL: 1-800-BIK-ESLK<br>
+            <a href="rentals.htm"> PRESS ME TO RENT</a><br>
+            <a href="mailto:Laith@bikes.com">Email us at: shop@LaithsBikes.com</a>
+        </address>
+        
+        <pre>
+        Store Address:
+        Laith's Bikes
+        2908 BIKE AVE.
+        Carbondale, IL, 62901
+        </pre>
+    </footer>
+</body>
+</html>
