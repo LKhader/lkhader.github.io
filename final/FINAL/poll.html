@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Your Favorite Wrestler</title>
+    <link rel="stylesheet" href="poll.css">
+    <link rel="icon" href="images/wrestling.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="wrestler3.html">Louie "Big Round" Sirgiovanni</a></li>
+                <li><a href="wrestler1.html">Daniel "Asian Invasion" Tsung</a></li>
+                <li><a href="wrestler4.html">Louis "Cute Killer" Van-Muylder</a></li>
+                <li><a href="wrestler2.html">Jackson "Not Like Us" Connelley</a></li>
+                <li><a href="poll.html" class="active">Vote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Poll Section -->
+    <div class="poll">
+        <h1>Vote for Your Favorite Wrestler!</h1>
+        <div class="poll-options">
+            <button data-wrestler="Louie">Louie "Big Round" Sirgiovanni</button>
+            <button data-wrestler="Daniel">Daniel "Asian Invasion" Tsung</button>
+            <button data-wrestler="Louis">Louis "Cute Killer" Van-Muylder</button>
+            <button data-wrestler="Jackson">Jackson "Not Like Us" Connelley</button>
+        </div>
+        <p id="vote-result">Click a button to vote!</p>
+
+        <!-- Optional: Display Current Votes -->
+        <div id="poll-results">
+            <h2>Current Votes:</h2>
+            <ul>
+                <li>Louie "Big Round" Sirgiovanni: <span id="votes-louie">0</span></li>
+                <li>Daniel "Asian Invasion" Tsung: <span id="votes-daniel">0</span></li>
+                <li>Louis "Cute Killer" Van-Muylder: <span id="votes-louis">0</span></li>
+                <li>Jackson "Not Like Us" Connelley: <span id="votes-jackson">0</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="poll.js"></script>
+</body>
+</html>
