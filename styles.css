@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Dark background for a bold theme */
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "profile picture"
+        "fun-fact picture"
+        "comments comments";
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container div {
+    background: #2a2a2a; /* Slightly lighter background for sections */
+    border: 1px solid #444; /* Subtle borders */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Strong shadows for depth */
+}
+
+/* Fighter Info Section */
+.profile {
+    grid-area: profile;
+    border-left: 4px solid #e63946; /* Red accent for fighter info */
+}
+
+.profile p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.profile h2 {
+    color: #e63946;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Fun Fact Section */
+.fun-fact {
+    grid-area: fun-fact;
+    border-left: 4px solid #f1c40f; /* Gold accent for fun facts */
+}
+
+.fun-fact p {
+    font-style: italic; /* Emphasize fun fact */
+}
+
+/* Picture Section */
+.picture {
+    grid-area: picture;
+    text-align: center;
+}
+
+.picture img {
+    max-width: 50%; /* Reduce the maximum width of the image */
+    height: auto;   /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #e63946; /* Highlight the image with a red border */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is centered as a block element */
+}
+
+.picture h2 {
+    color: #f1c40f;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Comments Section */
+.comments {
+    grid-area: comments;
+    text-align: center;
+    border-left: 4px solid #2980b9; /* Blue accent for comments */
+}
+
+.comments p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Global Header Styles */
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Hover Effects for Interactivity */
+.container div:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Add a bold call-to-action for comments */
+.comments p:hover {
+    color: #f1c40f;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "profile"
+            "picture"
+            "fun-fact"
+            "comments";
+        grid-template-columns: 1fr;
+    }
+
+    .picture img {
+        max-width: 100%; /* Full width for images on mobile */
+    }
+}
